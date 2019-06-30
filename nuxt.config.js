@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: '闲云旅游',
+    title: '史上最luobi的——闲云旅游网站',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -32,7 +32,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    { src: '@/plugins/localStorage', ssr: false },
+    '@/plugins/axios' // 调用插件
   ],
   /*
   ** Nuxt.js modules
@@ -46,7 +48,8 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: "http://127.0.0.1:1337" // 新增axios默认请求路径 
+    // baseURL: "http://127.0.0.1:1337" // 新增axios默认请求路径 
+    baseURL: " http://localhost:1337" // 新增axios默认请求路径 
   },
   /*
   ** Build configuration

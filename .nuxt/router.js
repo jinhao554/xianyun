@@ -5,6 +5,7 @@ import { interopDefault } from './utils'
 const _23716a95 = () => interopDefault(import('..\\pages\\air\\index.vue' /* webpackChunkName: "pages_air_index" */))
 const _00b0baaa = () => interopDefault(import('..\\pages\\hotel\\index.vue' /* webpackChunkName: "pages_hotel_index" */))
 const _1d61fc96 = () => interopDefault(import('..\\pages\\post\\index.vue' /* webpackChunkName: "pages_post_index" */))
+const _435dec86 = () => interopDefault(import('..\\pages\\air\\flights.vue' /* webpackChunkName: "pages_air_flights" */))
 const _2dad8e7e = () => interopDefault(import('..\\pages\\user\\login.vue' /* webpackChunkName: "pages_user_login" */))
 const _3ba30615 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
@@ -94,6 +95,10 @@ export function createRouter() {
       path: "/post",
       component: _1d61fc96,
       name: "post"
+    }, {
+      path: "/air/flights",
+      component: _435dec86,
+      name: "air-flights"
     }, {
       path: "/user/login",
       component: _2dad8e7e,

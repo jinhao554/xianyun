@@ -9,6 +9,7 @@
                   background:url(${$axios.defaults.baseURL + item.url}) center center no-repeat
                    background-size:contain contain 
                  `"
+                
         ></div>
       </el-carousel-item>
     </el-carousel>
